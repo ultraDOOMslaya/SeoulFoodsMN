@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="icon" href="./public/SeoulFoodsIcon.png">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+a { text-decoration: none}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  width: -webkit-fill-available;
+  height: 45rem;
+
+  min-width: 10rem;
+  min-height: 10rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  font-size: 2rem;
+}
+
+#store-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#store-name > img {
+  width: 3rem;
+  height: fit-content;
+  margin-bottom: -0.6rem;
+}
+
+#address {
+  float: left;
+  width: 34%;
+
+  color: black;
+  font-size: 0.75rem;
+}
+
+#subtitle {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+#socials {
+  margin-top: 0.5rem;
+  float: left;
+  width: 33%;
+  text-align: end;
+}
+
+.banner {
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.menu-bar {
+  background-color: #2e86d0;
+  height: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-size: 0.75rem;
+
+  background-image: linear-gradient(rgba(245,249,198,1), rgba(245,249,198,0));
+  height: 20rem;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.info-atlas {
+  display: flex;
+  flex-direction: column;
+  min-width: 15rem;
+  padding: 2%;
+  position: relative;
+}
+
+.info-atlas-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2.5%;
+}
+
+.footer {
+  display: flex;
+  font-size: 0.5rem;
+  padding: 2%;
+  margin-top: auto;
+}
+
+/* light melon f5f9c6 */
+/* dark melon bdd55b */
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  body {
+    margin: 0;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  #store-name > img {
+    margin-bottom: -0.35rem;
+  }
+
+  #address {
+    float: left;
+    width: 100%;
+    text-align: center;
+
+    font-size: 0.5rem;
+  }
+
+  #subtitle {
+    display: none;
+  }
+
+  #socials {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  #store-name > img {
+    width: 2rem;
+    height: fit-content;
+  }
+
+  .banner {
+    padding: 0;
+  }
+
+  .menu-bar {
+    height: 1rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info-atlas {
+    min-width: 100%;
+  }
+
+  .info-atlas-image {
+    margin-right: 2rem;
+    margin-top: -0.25rem;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+}
+</style>
+</head>
+<body style="font-family:Monaco;color:#aaaaaa;background-color: gainsboro;">
+
+  <div class="content">
+    
+    <div class="title">
+
+      <div id="store-name">
+        <img src="./public/SeoulFoodsIcon.png" />
+        <h><b>Seoul Foods</b></h>
+      </div>
+    </div>
+
+    <hr style="width: 100%;" />
+
+    <div>
+      <div id="address">
+        1071 E Moore Lake Dr. Fridley
+        <br>
+        MN 55432
+        <br>
+        763-572-0079
+      </div>
+  
+      <div id="subtitle">
+        DELUXE ASIAN MARKET
+      </div>
+
+      <div id="socials">
+        <a href="https://www.facebook.com/people/Seoul-foods/100067140894239/">
+          <img src="./public/FaceBookIcon.jpg" style="width: 2rem;" />
+        </a>
+        <a href="https://goo.gl/maps/YnPbsP3dcmJjcTt86">
+          <img style="width:2rem;" src="./public/GoogleMap.jpg" />
+        </a>
+      </div>
+    </div>
+
+    
+
+    <div class="banner">
+      <img style="width:100%" src="./public/SeoulFoodsBanner.jpg" />
+      <div class="menu-bar">
+
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="info-text">
+        <b>Welcome!</b>
+        <p>
+          Serving the community since 1996, Seoul Foods is an Asian supermarket that carries over 2,000 items from over 7 countries including China, Japan, Taiwan, Hong Kong, Vietnam, Thailand, and Korea.
+        </p>
+        <p>
+          In our store, you will always find the freshest, highest quality meat, seafood and produce. You will also find delicious “Ready to Eat” foods and an excellent assortment of Asian snacks, candies and beverages along with unique ice creams and bakeries.
+        </p>
+        <p>
+          Visit us today at our spacious 5,500 square foot store as we are geared to provide you with a "Best Taste of Asia" at its best!
+        </p>
+      </div>
+
+      <div class="info-atlas">
+        <h><b>Map & Directions</b></h>
+        <ul>
+          <li>Take Hwy65 & Central Ave (EXIT 38) from I-694</li>
+          <li>Take North of Hwy65, go 1 mile</li>
+          <li>Take right to East Moore Lake Drive</li>
+          <li>Take left to the parking lot</li>
+        </ul>
+        <b>Store Hours</b>
+        <ul>
+          <li>Mon-Fri: 10 am to 6 pm</li>
+          <li>Sat/Sun: 10 am to 7 pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="color:#667;font-size: 0.65rem;" class="footer">
+      Seoul Foods, Inc
+    </div>
+  </div>  
+
+</body>
+</html>
+
